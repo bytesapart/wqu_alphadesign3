@@ -48,7 +48,7 @@ df = web.DataReader(ticker, 'iex', start, end)
 # convert index to datetime
 df.index = pd.to_datetime(df.index)
 
-# Convert close price to float and reshapre to column vector
+# Convert close price to float and reshape to column vector
 
 # save stock close as float
 stock_prices = df.close.values.astype('float32')
